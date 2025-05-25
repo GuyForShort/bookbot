@@ -1,6 +1,9 @@
-from stats import get_num_words
+from stats import * #get_num_words
+from string import *
+
 
 def main():
-    get_num_words("./books/frankenstein.txt")
-
+    output={}
+    output=count_letters("./books/frankenstein.txt")
+    print(output)
 main()
